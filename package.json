@@ -1,9 +1,10 @@
 {
-  "name": "zanzibar",
+  "name": "preact-typescript-demo",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": {},
+  "repository": "https://github.com/shantanuraj/preact-typescript-demo.git",
+  "author": "Shantanu Raj <s@sraj.me>",
   "license": "MIT",
+  "private": true,
   "dependencies": {
     "preact": "^7.2.0"
   },
