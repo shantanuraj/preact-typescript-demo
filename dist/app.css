@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.Time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Time-text {
+  font-size: 24px;
+  color: #333333;
+}
