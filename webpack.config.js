@@ -23,7 +23,6 @@ module.exports = (env) => {
   if (env.prod) {
     Object.assign(output, {
       filename: '[name].[chunkhash].js',
-      publicPath: 'https://static.gamezop.io/peach/',
     });
   }
 
@@ -40,6 +39,7 @@ module.exports = (env) => {
         extensions: ['.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.json'],
     },
     plugins: removeEmpty([
+      new CopyWebpackPlugin([{ from: './public' }]),
       new webpack.optimize.CommonsChunkPlugin({ name: 'vendor' }),
       new webpack.DefinePlugin({
         'process.env': {

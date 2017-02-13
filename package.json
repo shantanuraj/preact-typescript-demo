@@ -24,7 +24,7 @@
   },
   "scripts": {
     "clean": "rm -r dist || true",
-    "dev": "webpack-dev-server --config webpack.config.js --env.dev --hot --inline",
+    "dev": "webpack-dev-server --config webpack.config.js --env.dev --hot --inline --content-base public",
     "prestart": "npm run clean",
     "start": "webpack --config webpack.config.js --env.dev -w",
     "build": "webpack --config webpack.config.js --env.dev",
